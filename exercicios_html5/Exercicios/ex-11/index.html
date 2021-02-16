@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+    <title>Midia em Html</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abri essa imagem em varios dispositivos diferentes ou simplesmente aumente e diminua no seu navegado</p>
+    <picture>
+        
+        <source media="(max-width:750px )" srcset="imagem/foto300.jpg" type="image/jpg">
+
+        <source media="(max-width:1050px )" srcset="imagem/foto500.jpg" type="image/jpg">
+        
+            <img src="imagem/foto1000.jpg" alt="imagem">
+    </picture>
+    
+    <h1> Colocando Áudio Site</h1>
+    <p>Vamos aprende a reproduzir audio em Html5</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midea/Forever - Anno Domini Beats.mp3" type="audio/mpeg">
+        <source src="midea/Forever - Anno Domini Beats.ogg" type="audio/ogg">
+           
+    </audio>
+        <audio preload="metadata" autoplay controls loop >
+            <source src="midea/infantil.mp3" type="audio/mpeg">
+            <source src="midea/infantil.ogg" type="audio/ogg">  
+        <p>infelizmente seu computador nao e capaz de produzir esse tipo de audio <a href="midea/infantil.mp3" >clique aqui</a> para realizar o dowload da musica</p>
+        </audio>
+    </p>
+</body>
+</html>
